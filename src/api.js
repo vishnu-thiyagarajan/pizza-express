@@ -17,7 +17,7 @@ router.get("/test", (req, res) => {
 });
 app.use(
   cors({
-    origin: ["*", "https://pizza-wheels.netlify.app/"],
+    origin: "*",
   })
 );
 app.use("/.netlify/functions/api", router);
