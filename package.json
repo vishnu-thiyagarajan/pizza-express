@@ -1,20 +1,19 @@
 {
-  "name": "pizza-express",
+  "name": "pizza-lambda",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "lambda-serve": "netlify-lambda serve functions",
+    "lambda-build": "netlify-lambda build functions"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "netlify-lambda": "^2.0.14",
-    "serverless-http": "^2.7.0"
+    "co": "^4.6.0",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.5",
+    "netlify-lambda": "^2.0.14"
   }
 }
