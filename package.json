@@ -1,5 +1,5 @@
 {
-  "name": "pizza-lambda",
+  "name": "pizza-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "co": "^4.6.0",
     "dotenv": "^10.0.0",
     "mongodb": "^4.1.1",
     "mongoose": "^6.0.5",
