@@ -1,11 +1,12 @@
 import { connectToDatabase } from "../lib/database";
-import { headers } from "../util/headers";
+import headers from "../util/headers";
 
 exports.handler = async (event, context) => {
   if (event.httpMethod === "GET") {
     const db = await connectToDatabase();
     const collection = await db.collection("Pizza");
     const pizzas = await collection.find({}).toArray();
+    console.log(headers);
     return {
       statusCode: 200,
       headers: headers,
